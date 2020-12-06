@@ -19,7 +19,11 @@ Avenir Next
 Lato
 */
 /*---------------------------------------------*/
-
+@font-face{
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+}
 
 /*----------------------٢-----------------------*/
 /*                  DEFAULTS                    */
@@ -29,8 +33,49 @@ html, body, h1, h2, p
 وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
 */
 /*----------------------------------------------*/
-
-
+*{
+    font-family: 'AvenirNext';
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 18px;
+}
+h3{
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+h4{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h5{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+p{
+    font-size: 16px;
+    line-height: 23px;
+}
+input {
+    display: contents;
+    outline: none;
+}
 
 /*----------------------٣-----------------------*/
 /*               HELPER CLASSES                 */
@@ -41,58 +86,432 @@ classes
 على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
 */
 /*----------------------------------------------*/
-
+.button{
+    display: block;
+    border-radius: 41px;
+    padding: 10px;
+    margin-top: 20px;
+    min-width: 200px;
+    text-align: center;
+    background: #3040C4;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 42px;
+    z-index: 1;
+    outline: none;
+}
 
 /*----------------------٤-----------------------*/
 /*                    LAYOUT                    */
 /*                البناء العام للصفحة           */
 /*----------------------------------------------*/
-
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.widget{
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.widget__desc{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
 
 /*----------------------٥-----------------------*/
 /*                    HEADER                    */
 /*----------------------------------------------*/
-
-
+header {
+    padding: 36px 80px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEF0FC;
+}
+.main-nav{
+    display: flex;
+}
+.main-nav li{
+    display: inline-block;
+    padding-left: 37px;
+    color: #191B43;
+}
 
 /*----------------------٦-----------------------*/
 /*                     HERO                     */
 /*----------------------------------------------*/
-
-
+.hero{
+    margin-top: 20px;
+}
+.hero .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 375px;
+    max-height: 300px;
+    margin-left: 80px;
+    padding-right: 80px;
+}
+.hero__image img {
+    width: 100%;
+}
 
 /*----------------------٧-----------------------*/
 /*              MEET YOUR MATCH                 */
 /*----------------------------------------------*/
-
-
+.meetYourMatch{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.meetYourMatch .container{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.meetYourMatch__background{
+    position: absolute;
+    background: #EEF0FC;
+    border-radius: 18px;
+    width: 90%;
+    height: 25rem;
+    z-index: -1;
+}
+.meetYourMatchــcontent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px;
+    justify-content: center;
+    width: 100%;
+}
+.meetYourMatchــform{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+    width: 100%;
+}
+.switcher{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    width: 220px;
+    justify-content: space-between;
+}
+.switcher span{
+    color: #9FA2B8;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-group input {
+    position: relative;
+    display: flex;
+    border: 1px solid #3040C4;
+    border-radius: 41px;
+    right: -66px;
+    bottom: -9px;
+    z-index: 0;
+    width: 40%;
+    min-width: 260px;
+    padding: 20px 50px;
+    color: #3040C4;
+    font-size: 18px;
+    height: 60px;
+    text-transform: capitalize;
+    background: url(../images/map-pin.png) no-repeat;
+    background-position: 20px 18px;
+    background-color: #FFFFFF;
+}
+.form-group input::placeholder{
+    color: #3040C4;
+}
+.form-group button{
+    width: 20%;
+    min-width: 65px;
+}
+.meetYourMatch .widget__desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 76px 172px rgba(205, 213, 228, 0.5);
+    padding: 16px 18px;
+    width: 100%;
+}
 
 /*----------------------٨-----------------------*/
 /*               HOW IT WORKS                   */
 /*----------------------------------------------*/
-
-
+.howItWorks .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.howItWorks .widgets {
+    margin: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.howItWorks h3{
+    text-align: center;
+}
+.howItWorks p{
+    font-size: 16px;
+    text-align: center;
+    color: #6A6C79;
+}
 
 /*----------------------٩-----------------------*/
 /*                 STORIES                      */
 /*----------------------------------------------*/
-
-
+.stories {
+    width: 100%;
+    height: 60rem;
+    margin-top: 70px;
+    background: #F6F6F9;
+}
+.stories .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.stories .container h2{
+    margin-top: 50px;
+}
+.stories .widgets{
+    margin: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.heading-paragraph{
+    width: 45%;
+    text-align: center;
+    color: #5F5F80;
+}
+.widget__desc a{
+    font-size: 14px;
+    color: #2329DB;
+}
 
 /*----------------------١٠----------------------*/
 /*       Actions: Change A Life, Adopt A Pet    */
 /*----------------------------------------------*/
-
-
+.actions {
+    position: relative;
+    background: #3040C4;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+}
+.actions .container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.actions h2 {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    color: #FFFFFF;
+}
+.actions .is-secondary{
+    position: relative;
+    background-color: #ffffff;
+    color: #3040C4;
+    font-weight: bold;
+    top: 130px;
+    margin-right: 20px;
+}
+.actions .is-outline {
+    position: relative;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    top: 130px;
+}
 
 /*---------------------١١-----------------------*/
 /*                    FOOTER                    */
 /*----------------------------------------------*/
-
-
+footer{
+    margin: 150px 130px;
+    margin-bottom: 50px;
+}
+footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.copyrights {
+    margin-bottom: 20px;
+}
+.copyrights *{
+    margin-bottom: 10px;
+}
+.footer-nav {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-nav .item {
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 3rem;
+    padding-bottom: 50px;
+}
 
 /*----------------------١٢----------------------*/
 /*                    Responsive                */
 /*       كل ما هو متعلق بالهواتف والتابلت       */
 /*----------------------------------------------*/
+@media (min-width: 768px){
+    .hero .container {
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width: 768px){
+    header {
+        padding: 36px 40px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .burger {
+        outline: none;
+        position: relative;
+        background-color: transparent;
+        height: 23px;
+        width: 24px;
+        margin: 0;
+        padding: 3px 2px;
+        cursor: pointer;
+    }
+    .burger div {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        transition: background-color 0.5s;
+        transition: all ease-out 0.5s;
+    }
+    .burger div:first-child{
+        margin-top: -5px;
+    }
+    .burger  div:last-child{
+        margin-top: 5px;
+    }
+    .is-visible-mobile div:first-child{
+        transform: rotate(45deg);
+        margin: 0;
+    }
+    .is-visible-mobile div:nth-child(2){
+        background-color: transparent;
+    }
+    .is-visible-mobile div:last-child{
+        transform: rotate(-45deg);
+        margin: 0;
+    }
+    .is-visible-mobile .main-nav {
+        display: block;
+    }
+}
+@media (max-width: 1200px){
+    header .container{
+        border: none;
+    }
+    .stories .widgets{
+        flex-flow: column;
+        justify-content: center;
+    }
+    .stories {
+        height: 80rem;
+    }
+}
+@media (max-width: 768px){
+    .meetYourMatch__background{
+        margin: 0;
+        width: 100%;
+        border-radius: 0 0 18px 18px;
+    }
+    .meetYourMatch{
+        position: relative;
+        margin: 0;
+        width: 100%;
+    }
+    .widget__image img {
+        width: 100%;
+        height: 200px;
+    }
+    .meetYourMatch .widget {
+        width: 100%;
+    }
+    .meetYourMatch .widgets {
+        width: 100%;
+    }
+    .howItWorks .widgets{
+        flex-flow: column;
+    }
+    footer{
+        margin: 50PX 30PX;
+    }
+    footer .container{
+        flex-flow: column;
+    }
+    .footer-nav {
+        margin: 0;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-nav .item {
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+}
