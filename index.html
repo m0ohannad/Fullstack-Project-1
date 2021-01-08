@@ -47,14 +47,14 @@
                         <h1>Find and Adopt a pet Near You</h1>
                         <p>There are so many loving adoptable pets right in your community waiting for a family to call
                             their own. </p>
-                        <a href="#" class="button is-primary">Find a pet</a>
+                        <a href="#find" class="button is-primary">Find a pet</a>
                     </div>
                     <div class="hero__image">
                         <img src="images/hero-image.png" alt="Hero Image" />
                     </div>
                 </div>
             </section>
-            <section class="meetYourMatch">
+            <section id="find" class="meetYourMatch">
                 <div class="container">
                     <div class="meetYourMatch__background"></div>
                     <!--ربما ستحتاج هذا العنصر الخالي لعمل نمط الخلفية-->
@@ -63,61 +63,22 @@
                         <form action="#" class="meetYourMatchــform">
                             <div class="switcher">
                                 <label for="dog">
-                                    <input id="dog" name="animal_type" type="checkbox" />
+                                    <input onclick="filter()" id="dog" name="animal_type" type="checkbox" />
                                     <img src="images/pets/dog.png" alt="dog image">
                                 </label>
                                 <span>or</span>
                                 <label for="cat">
-                                    <input id="cat" name="animal_type" type="checkbox" />
+                                    <input onclick="filter()" id="cat" name="animal_type" type="checkbox" />
                                     <img src="images/pets/cat.png" alt="cat image">
                                 </label>
                             </div>
+                            <h5 id="note"></h5>
                             <div class="form-group">
-                                <input type="text" placeholder="Entre  your city" />
-                                <button class="button is-primary" type="submit">search</button>
+                                <input id="search" type="text" placeholder="Entre  your city" />
+                                <button id="searchBtn" class="button is-primary" type="submit">search</button>
                             </div>
                         </form>
                         <div class="widgets is-searchResults">
-                            <div class="widget">
-                                <div class="widget__image">
-                                    <img src="images/pet-01.png" alt="pet image">
-                                </div>
-                                <div class="widget__desc">
-                                    <h4>Rocco</h4>
-                                    <p>Male | Young</p>
-                                    <p>Los Angeles CA</p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <div class="widget__image">
-                                    <img src="images/pet-02.png" alt="pet image">
-                                </div>
-                                <div class="widget__desc">
-                                    <h4>Chanona</h4>
-                                    <p>Male | Young</p>
-                                    <p>Los Angeles CA</p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <div class="widget__image">
-                                    <img src="images/pet-03.png" alt="pet image">
-                                </div>
-                                <div class="widget__desc">
-                                    <h4>Morio</h4>
-                                    <p>Male | Young</p>
-                                    <p>Los Angeles CA</p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <div class="widget__image">
-                                    <img src="images/pet-04.png" alt="pet image">
-                                </div>
-                                <div class="widget__desc">
-                                    <h4>danio</h4>
-                                    <p>Male | Young</p>
-                                    <p>Los Angeles CA</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,41 +125,13 @@
                     <h2>Featured Stories</h2>
                     <p class="heading-paragraph">Together, we've helped save over 80K pets through adoption. Read
                         amazing stories to see how adoption change the life of those people</p>
-                    <div class="widgets">
-                        <div class="widget">
-                            <div class="widget__image">
-                                <img src="images/stories/1.png" alt="graphic-image">
-                            </div>
-                            <div class="widget__desc">
-                                <h3>This is how I met Kori</h3>
-                                <a href="#" class="link">Read More</a>
-                            </div>
-                        </div>
-                        <div class="widget">
-                            <div class="widget__image">
-                                <img src="images/stories/2.png" alt="graphic-image">
-                            </div>
-                            <div class="widget__desc">
-                                <h3>I can’t live without Nochi.</h3>
-                                <a href="#" class="link">Read More</a>
-                            </div>
-                        </div>
-                        <div class="widget">
-                            <div class="widget__image">
-                                <img src="images/stories/3.png" alt="graphic-image">
-                            </div>
-                            <div class="widget__desc">
-                                <h3>My cat, My new friend!</h3>
-                                <a href="#" class="link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="widgets" id="title"></div>
                 </div>
             </section>
             <section class="actions">
                 <div class="container">
                     <h2>Change a Life, Adopt a Pet</h2>
-                    <a href="#" class="button is-secondary">Find a pet</a>
+                    <a href="#find" class="button is-secondary">Find a pet</a>
                     <a href="#" class="button is-outline">Donate</a>
                 </div>
             </section>
@@ -214,7 +147,7 @@
                     <div class="item">
                         <h5>How to Adopt</h5>
                         <ul>
-                            <li><a href="#">find a pet</a></li>
+                            <li><a href="#find">find a pet</a></li>
                             <li><a href="#">adoption centers</a></li>
                             <li><a href="#">adoption events</a></li>
                         </ul>
@@ -246,6 +179,7 @@
             </div>
         </footer>
     </div>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

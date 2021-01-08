@@ -1,0 +1,53 @@
+{
+    "pets": [
+        {
+            "type": "Dog",
+            "gender": "Male",
+            "age_category": "Young",
+            "name": "Rocco",
+            "location": "Los Angeles CA",
+            "img": "../images/pet-01.png"
+        },
+        {
+            "type": "Cat",
+            "gender": "Female",
+            "age_category": "Baby",
+            "name": "Chanona",
+            "location": "Almadinah Almunawwarah SA",
+            "img": "../images/pet-02.png"
+        },
+        {
+            "type": "Dog",
+            "gender": "Female",
+            "age_category": "Young",
+            "name": "Morio",
+            "location": "sanaa YE",
+            "img": "../images/pet-03.png"
+        },
+        {
+            "type": "Dog",
+            "gender": "Male",
+            "age_category": "Old",
+            "name": "Danio",
+            "location": "Cairo EG",
+            "img": "../images/pet-04.png"
+        }
+    ],
+    "stories": [
+        {
+            "img": "../images/stories/1.png",
+            "title": "This is how I met Kori",
+            "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem mollis aliquam. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Scelerisque eu ultrices vitae auctor. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Ultricies mi eget mauris pharetra et ultrices neque ornare. Et netus et malesuada fames ac turpis. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Eu lobortis elementum nibh tellus molestie nunc."
+        },
+        {
+            "img": "../images/stories/2.png",
+            "title": "I Can’t Live Without Nochi.",
+            "story": "Ac odio tempor orci dapibus ultrices in. Interdum varius sit amet mattis vulputate enim nulla. In ante metus dictum at tempor commodo ullamcorper. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Sed tempus urna et pharetra pharetra. Ac tortor dignissim convallis aenean et. Gravida in fermentum et sollicitudin ac orci. Orci sagittis eu volutpat odio facilisis mauris sit amet massa. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Lectus arcu bibendum at varius vel pharetra vel. Dignissim sodales ut eu sem integer vitae."
+        },
+        {
+            "img": "../images/stories/3.png",
+            "title": "My Cat, My New Friend!",
+            "story": "Enim neque volutpat ac tincidunt vitae semper quis lectus. Turpis egestas integer eget aliquet nibh praesent tristique magna. Ipsum suspendisse ultrices gravida dictum fusce. Vestibulum sed arcu non odio euismod lacinia. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Dictumst quisque sagittis purus sit amet. Mus mauris vitae ultricies leo. Mattis enim ut tellus elementum sagittis. In est ante in nibh mauris cursus mattis molestie a. Purus semper eget duis at tellus at urna. Et molestie ac feugiat sed lectus vestibulum mattis. Orci a scelerisque purus semper eget duis at. Amet aliquam id diam maecenas ultricies mi. Nunc sed velit dignissim sodales ut eu sem integer vitae. Vel facilisis volutpat est velit egestas. Nisl purus in mollis nunc sed. Consectetur adipiscing elit pellentesque habitant morbi tristique."
+        }
+    ]
+}
